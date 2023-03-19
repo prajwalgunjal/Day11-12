@@ -32,14 +32,14 @@ Scanner sc = new Scanner(System.in);
         return val*numofshare;
     }
 
-//    void totalvalueofallstocks(){
-//        double totalvalurofallstack=0;
-//        for(Stock stock : stocklist)
-//        {
-//            totalvalurofallstack = totalvalurofallstack+stock.getTotalvalueofeachstock();
-//        }
-//        System.out.println("Total value of all stack is "+totalvalurofallstack);
-//    }
+    void totalvalueofallstocks(){
+        double totalvalurofallstack=0;
+        for(Stock stock : stocklist)
+        {
+            totalvalurofallstack = totalvalurofallstack+stock.getTotalvalueofeachstock();
+        }
+        System.out.println("Total value of all stack is "+totalvalurofallstack);
+    }
     void totalvalueofstock(){
 
         double total = 0;
