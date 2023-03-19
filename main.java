@@ -5,5 +5,6 @@ public class main {
         StockManagement stockManagement = new StockManagement();
         stockManagement.createStock();
         stockManagement.display();
+        stockManagement.totalvalueofallstocks();
     }
 }
