@@ -7,11 +7,13 @@ public class Stock {
         private String name;
         private int numShares;
         private int sharePrice;
+        private int Totalvalueofeachstock;
 
-    public Stock(String name, int numShares, int sharePrice) {
+    public Stock(String name, int numShares, int sharePrice,int TotalvalueofEachStock) {
         this.name = name;
         this.numShares = numShares;
         this.sharePrice = sharePrice;
+        this.Totalvalueofeachstock=TotalvalueofEachStock;
     }
 
     public Stock() {
@@ -41,14 +43,24 @@ public class Stock {
             this.sharePrice = sharePrice;
         }
 
+    public int getTotalvalueofeachstock() {
+        return Totalvalueofeachstock;
+    }
+
+    public void setTotalvalueofeachstock(int totalvalueofeachstock) {
+        Totalvalueofeachstock = totalvalueofeachstock;
+    }
+
     @Override
     public String toString() {
         return "Stock{" +
                 "name='" + name + '\'' +
                 ", numShares=" + numShares +
                 ", sharePrice=" + sharePrice +
+                ", Totalvalueofeachstock=" + Totalvalueofeachstock +
                 '}';
     }
 }
+
 
 
